@@ -12,8 +12,7 @@ int main() {
   for(int i = 0; i < n; i++) {
     double x = (rand() / (double)RAND_MAX) * 2 - 1;
     double y = (rand() / (double)RAND_MAX) * 2 - 1;
-    double test = sqrt(x*x + y*y);
-    if(test > 1) {
+    if(sqrt(x*x + y*y) > 1) {
       out += 1;
     }
   }
