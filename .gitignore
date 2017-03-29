@@ -1,2 +1,4 @@
 c/clang-*
 c/gnu-*
+
+*.class
