@@ -2,3 +2,5 @@ c/clang-*
 c/gnu-*
 
 *.class
+
+target/
