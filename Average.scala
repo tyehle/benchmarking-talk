@@ -10,14 +10,15 @@ object Average {
 
     val writer = new BufferedWriter(new FileWriter("averages.tsv"))
 
-    writer.write("Program\tAvg\tStdDev\n")
+    writer.write("Program\tAvg\tStdDev\t99Conf\n")
 
     grouped.keys.toList.sorted.foreach { key =>
       val mean = averaged(key)
       val sqDiffs = grouped(key).map(_ - mean).map(x => x*x)
       val stdDev = math.sqrt(sqDiffs.sum / sqDiffs.length)
+      val conf99 = stdDev * 2.576
 
-      writer.write(s"$key\t$mean\t$stdDev\n")
+      writer.write(s"$key\t$mean\t$stdDev\t$conf99\n")
     }
 
     writer.close()

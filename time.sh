@@ -9,7 +9,7 @@ declare -a programs=("./c/gnu-default" "./c/gnu-1" "./c/gnu-2" "./c/gnu-3" "./c/
                      "scala -cp scala PiFor" "scala -cp scala PiRec" "scala -cp scala PiWhile")
 
 output=data.tsv
-n=3
+n=500
 
 rm -f $output
 
