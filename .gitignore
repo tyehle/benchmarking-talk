@@ -4,3 +4,5 @@ c/gnu-*
 *.class
 
 target/
+
+*.jar
