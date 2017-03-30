@@ -8,7 +8,7 @@ declare -a programs=("./c/gnu-default" "./c/gnu-1" "./c/gnu-2" "./c/gnu-3" "./c/
                      "java -jar scala/pi-for.jar" "java -jar scala/pi-rec.jar" "java -jar scala/pi-while.jar"
                      "scala -cp scala PiFor" "scala -cp scala PiRec" "scala -cp scala PiWhile")
 
-output=times
+output=data.tsv
 n=3
 
 rm -f $output

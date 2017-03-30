@@ -6,3 +6,5 @@ c/gnu-*
 target/
 
 *.jar
+
+*.tsv
